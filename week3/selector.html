@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: white;
+        }
+        p{
+            color: red;
+        }
+        .highlight{
+            color: blue;
+        }
+        #unique{
+            color: purple;
+        }
+
+        /* en pasif p
+        class p'yi ezer
+        id class'ı ezer
+        en baskın id */
+
+        div p{
+            color: green;
+        }
+
+        /* en alttaki üsttekini ezer 
+        son yazılan en baskın*/
+        
+        /*genelden özele yazmak lazım
+        önce taglar sonra class'lar sonra id'ler*/
+        
+        div p, span{
+            color: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <span>Lorem, ipsum.</span>
+    <p>Lorem, ipsum dolor.</p>
+    <p class="highlight">Lorem, ipsum dolor.</p>
+    <p id="unique" class="highlight">Lorem, ipsum dolor.</p>
+</body>
+</html>
