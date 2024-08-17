@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //boş dizi
+        let emptyArray = [];
+        console.log("Boş dizi" , emptyArray);
+
+        //Karışık dizi
+        let mixedArray = [1, "merhaba", true, null];
+        console.log("Karışık dizi", mixedArray);
+
+        //Dizi uzunluğu
+        let arrayLength = mixedArray.length;
+        console.log("Dizinin uzunluğu", arrayLength);
+        console.log("Son eleman : ", mixedArray[arrayLength - 1]);
+
+        //Diziye eleman ekleme çıkarma
+        mixedArray.push("Yeni eleman");//sonuna ekle
+        console.log("Karışık dizi", mixedArray);
+        
+        mixedArray.unshift("ilk eleman");//başına ekle
+        console.log("Karışık dizi", mixedArray);
+
+        let removeElement = mixedArray.pop//sondan çıkarma
+        console.log("", mixedArray);
+
+        //
+
+        let number = [3,6,1,9,4];
+        console.log("Ters Çevir : ", number.reverse());
+        
+        number.sort((a,b) => a-b);
+        console.log("Sıralı : ", number);
+
+        number.sort((a,b) => b-a);
+        console.log("Ters Sıralı : ", number);
+        
+        
+        let slicedArray = number.slice(0,3);//Bölme
+        console.log("Bölünmüş : ", slicedArray);
+        
+        let combinedArray = number.concat(slicedArray);
+        console.log("Birleşmiş : ", combinedArray);
+
+    </script>
+</body>
+</html>
