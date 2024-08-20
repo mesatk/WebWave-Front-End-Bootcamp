@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Storage and Session</h2>
+
+    <button id="saveData">Save Data to Local Storage</button>
+    <button id="getData">Get Data to Local Storage</button>
+
+    <script>
+        document.getElementById("saveData").addEventListener("click", function(){
+            localStorage.setItem("username", "EsatKiraz");
+            sessionStorage.setItem("sessionKey", "sessionValue");
+            alert("Data Saved");
+        });
+
+        document.getElementById("getData").addEventListener("click", function(){
+            const username = localStorage.getItem("username");
+            const sessionValue = sessionStorage.getItem("sessionKey");
+            alert(`username : ${username}, Session : ${sessionValue}`);
+        });
+    </script>
+</body>
+</html>
